@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Form</title>
+</head>
+<body>
+    <form action="./Ans.html">
+        <label for="name">Name</label>
+   <!-- 
+       LABLE TAG:
+           -Alable tag used to disclose a text in the form ,reffering to the input field.
+           -"for" key in attribute is mapped with the input element id to find the respective field to it.
+   -->
+   <input type="text" id="name" placeholder="Full Name">
+   <br><br>
+   <!-- 
+       INPUT TAG:
+           -Having an input field to store the user data.
+           -Default input is of 'text' type.
+           -Attribute:
+               -required: Make the input field manditory
+               -disable: Make the input field inactive
+               -cheacked: Make the selected cheackbox cheacked
+               -placeholder:Help the user to understand about an input field.
+           -type:
+               -text
+               -number
+               -date
+               -password
+               -email
+               -color
+               -url
+               -file
+               -time
+               -date time
+               -radio
+               -butotn
+
+               -->
+               <label for="num">phone-no</label>
+               <input type="number" id="num" placeholder="phone number" max="9">
+               <br><br>
+
+               <label for="date">Birth-date</label>
+               <input type="date" id="date" placeholder="Birth-date">
+               <br><br>
+
+               <label for="pass">password <span style="color: red; font-size: 15px;">*</span></label>
+               <input type="password" id="pass" required placeholder="password">
+               <br><br>
+
+               <label for="mail">Email</label>
+               <input type="email" id="mail"  placeholder="Email">
+               <br><br>
+
+               <label>Gender:</label>
+               <input type="radio" name="gender" id="male" value="Male">
+               <label for="male">Male</label>
+               <input type="radio" name="gender" id="female" value="Female">
+               <label for="female">Female</label>
+               <input type="radio" name="gender" id="others" value="Other">
+               <label for="others">Other</label>
+               <br><br>
+
+               <label>Language:</label>
+               <input type="checkbox" name="Language" id="eng" value="English">
+               <label for="eng">English</label>
+               <input type="checkbox" name="Language" id="hin" value="Hindi">
+               <label for="hin">Hindi</label>
+               <input type="checkbox" name="Language" id="beng" value="Bengali">
+               <label for="beng">Bengali</label>
+               <input type="checkbox" name="Language" id="tam" value="Tamil">
+               <label for="tam">Tamil</label>
+               <br><br>
+
+               <label for="count">Country:</label>
+                   <select id="count">
+                       <option selected disabled> Please select a Country</option>
+                       <option value="India">India</option>
+                       <option value="Australia">Australia</option>
+                       <option value="Nepal">Nepal</option>
+                       <option value="Egypt">Egypt</option>
+                   </select>
+               <br><br>
+               <button>Submit</button>
+    </form>
+</body>
+</html>
